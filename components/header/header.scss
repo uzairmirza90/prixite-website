@@ -1,0 +1,38 @@
+.header-container {
+    background-position: "center";
+    background-repeat: "no-repeat";
+    background-size: "cover";
+}
+
+
+.header {
+    background-color: "#000000";
+    opacity: 0.55;
+    transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
+}
+
+.app-bar {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header-menu {
+    flex-grow: 0;
+    align-items: center;
+}
+
+.contact-us-button {
+    text-align: center;
+    background-color: var(--primary-green);
+    color: 'white';
+    border-radius: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+.contact-us-button:hover {
+    background-color: var(--primary-green);
+}
