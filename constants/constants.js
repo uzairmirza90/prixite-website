@@ -278,3 +278,117 @@ export const scrapingData = {
         'Another amazing feature of our data scraping software is that it allows users to export the extracted data in CSV, XLSV, and JSON formats directly from the browser which you can easily access via API and webhooks. Or you may also use Dropbox to export the extracted data.',
     ]
 }
+
+
+
+
+
+
+
+
+/*************          Python Programming Data      ***************  */
+export const pythonProgramming = {
+    title: 'Python Programming - Prixite',
+    header: 'Python Programming',
+    heading: `Prixite is one of the top companies to provide full-stack python web development services to its clients worldwide.`,
+    details: [
+        `Python is one of the greatest tools in the technology industry embodying the power of building inventive, faster, real-time, and scalable applications. Strengthen your back end with speedy and advanced Python programming languages offered by Prixite. We are being one of the leading python service providers all over the world aim to deliver world-class services to our clients in developing quality websites and mobile applications using innovative and advanced Python Development using Django framework and incentive cutting edge tools. Our team of expert professionals at Prixite believes in offering its potential clients superior quality customer service by establishing premium quality, advanced and collaborative project management systems, and operations. We help our clients in handling immense and high-speed data while enhancing the data exchange and retrieval performance via advanced and innovative enterprise solutions to their business requirements.`,
+        `We anchorage the strength and advancement of our Python programming language services by establishing superior and high-quality performing web applications. Prixite takes pride in offering its clients advanced python services and solutions which are widely used and are considered a high-level programming language. It has a huge selection of preexisting libraries, frameworks, and simplicity that makes it quite a great fit for highly complicated web projects and applications. It is considered one of the most important and popular technology among business developers.`,
+    ],
+    description:  `Prixite understands the importance of IT in the business industry and offers a full range of python services that includes Django development, Pyramid development, Flask development, and Zope development. In addition to this, We offer our potential clients with up to date and range of python services that includes`,
+    paraList: [
+        'Prototype Development',
+        'Python Migration',
+        'Python Independent Testing',
+        'Python Application Development',
+        'Machine Learning',
+        'Python Backend Development and Support',
+        'Data Science',
+        'Python Maintenance and Support',
+        'Internet of Things (IoT)',
+    ]
+}
+
+
+
+
+
+
+
+
+
+/*************          Mobile Application Data      ***************  */
+export const mobileAppDevelopment = {
+    title: 'Mobile Application Development - Prixite',
+    header: 'Mobile Application Development',
+    heading: `To improve your digital strategy and benefit from all the advantages of the mobile digital age, the mobile application`,
+    details: [
+        `Whether you are looking to develop a mobile application for tablets, smartphones or both Prixite got your back when it comes to mobile application development no matter which platform you want it to build on which smart device it is to be used on. We are a team of experts and offer our clients a wide range of innovative and advanced services to optimize their business processes and achieve the desired outcome and objective. We aim to provide our customers with cross-platform mobile applications that can perform on any smart device or platform. Clients who choose to work with us can be truly assured that their customized mobile application needs will be truly met and executed and their outcome will be completely secure, measurable, advanced, and inventive and entirely sustainable no matter on which platform it is developed and hosted.`,
+        `We develop, design, and deliver mobile applications across all major and required platforms such as Android, BlackBerry, iOS (iPhone & iPad), and also Windows Mobile. Our expert professionals are there to understand your business needs and help you with an aspect of your need such as customized UX/UI design, business analysis, project management, custom codes, and most importantly quality assurance for complete end to end mobile application development solution to be truly delivered and experienced by its required audience in the world of technology.`,
+    ],
+    description:  `In addition to these we offer our client a wide range of services associated with mobile app development involving:`,
+    paraList: [
+        'Complete business requirement analysis and interpretation',
+        'UX testing and Quality User Experience',
+        'Customized Design architecture and Wire Framing',
+        'Advanced Project Management',
+        'Professional Development Process and Extensive Integration Expertise',
+        'Cross-Platform Mobile Application Development',
+        'Vigilant Quality Check and Control',
+        'Timely Delivery and Budget Friendly Services',
+        'Complete Assistance in launching your app in App Store, Play Store, and other marketplaces.',
+    ]
+}
+
+
+
+
+
+
+
+
+/*************          Progressive Web App Data      ***************  */
+export const progressiveWebApp = {
+    title: 'Progressive Web Application - Prixite',
+    header: 'Progressive Web Application',
+    heading: `Prixite is one of the top PWA service providers to its clients with progressive tools and approaches to their business needs.`,
+    details: [
+        `Progressive web applications (PWA) are one of the most innovative solutions that are used by many business leaders in their relative industry. The development and progress of PWA allow businesses to have the effect of native mobile application experience in a browser. With the help of which your applications related to business and e-commerce websites perform relatively faster, gives better UX which results in the growth of your conversions. Prixite takes pride in developing a lot of successful PWA implementations for its clients according to their business model, requirements, and expectations and in return helped them generate more sales via the website.`,
+        `PWA is an inventive solution to the dynamic business needs of our clients and it’s truly cost-effective and highly performant. It is indeed a great combination of highly performing sides of websites and native mobile apps. We completely understand the fact that no client and project are the same and require the utmost attention to details and expertise to solve their business needs. From the very beginning of the project, we tend to develop a relationship of trust and understanding with our clients and our team of experts make sure to understand the requirements of our clients quite intuitively.`,
+    ],
+    description:  `We believe in offering our potential clients worldwide advanced, innovative, and updated PWA solutions that will truly enhance the efficiency and effectiveness of their business functions. Our wide variety of services includes:`,
+    paraList: [
+        'Customized Progressive Web Application for our clients',
+        'Progressive Web Application for e-commerce business',
+        'Initiating Migration to Progressive Web Application',
+        'Complete UX Optimization',
+    ],
+    para: 'The technology, tools, and frameworks we use to ensure the quality service delivery of progressive web application to our clients includes Laravel, Angular, Vue, Lighthouse, and Workbox which makes us an ideal choice for our customer’s business needs.'
+}
+
+
+
+
+
+
+
+
+
+/*************          React Development Data      ***************  */
+export const reactDevelopment = {
+    title: 'React Development - Prixite',
+    header: 'React Development',
+    heading: `Prixite is one of the top PWA service providers to its clients with progressive tools and approaches to their business needs.`,
+    details: [
+        `Progressive web applications (PWA) are one of the most innovative solutions that are used by many business leaders in their relative industry. The development and progress of PWA allow businesses to have the effect of native mobile application experience in a browser. With the help of which your applications related to business and e-commerce websites perform relatively faster, gives better UX which results in the growth of your conversions. Prixite takes pride in developing a lot of successful PWA implementations for its clients according to their business model, requirements, and expectations and in return helped them generate more sales via the website.`,
+        `PWA is an inventive solution to the dynamic business needs of our clients and it’s truly cost-effective and highly performant. It is indeed a great combination of highly performing sides of websites and native mobile apps. We completely understand the fact that no client and project are the same and require the utmost attention to details and expertise to solve their business needs. From the very beginning of the project, we tend to develop a relationship of trust and understanding with our clients and our team of experts make sure to understand the requirements of our clients quite intuitively.`,
+    ],
+    description:  `We believe in offering our potential clients worldwide advanced, innovative, and updated PWA solutions that will truly enhance the efficiency and effectiveness of their business functions. Our wide variety of services includes:`,
+    paraList: [
+        'Customized Progressive Web Application for our clients',
+        'Progressive Web Application for e-commerce business',
+        'Initiating Migration to Progressive Web Application',
+        'Complete UX Optimization',
+    ],
+    para: 'The technology, tools, and frameworks we use to ensure the quality service delivery of progressive web application to our clients includes Laravel, Angular, Vue, Lighthouse, and Workbox which makes us an ideal choice for our customer’s business needs.'
+}
