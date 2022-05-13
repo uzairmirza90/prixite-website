@@ -9,58 +9,38 @@ import { useRouter } from 'next/router';
 const Header = ({ children, bgImg }) => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
+    const router = useRouter()
+
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
 
     const handleCloseNavMenu = (page) => {
         setAnchorElNav(null)
+        router.push(page.path)
     };
-
-    const router = useRouter()
 
     return (
         <Box 
-            className='header-container' 
             sx={{ 
-                background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${bgImg?.src})` }}
+                background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${bgImg?.src})`,
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover' 
+            }}
         >
-            <Box 
-                className='header'
-            >
-            </Box>
-            <AppBar 
-                position='static' 
-                className='app-bar'
-            >
+            <Box  className='header'></Box>
+            <AppBar position='static' className='app-bar'>
                 <Container maxWidth='xl'>
                     <Toolbar disableGutters>
-                        <Box 
-                            sx={{ 
-                                mr: 2, 
-                                display: { xs: "none", md: "flex" } 
-                            }}
-                        >
-                            <Image src={logoImg} alt='Prixite' />
+                        <Box sx={{ mr: 2, display: { xs: "none", md: "flex"}, cursor: 'pointer' }} >
+                            <Image src={logoImg} alt='Prixite' onClick={() => router.push('/')}/>
                         </Box>
-                        <Box 
-                            sx={{ flexGrow: 1 }}
-                        >
-                        </Box>
-                        <Box 
-                            sx={{ 
-                                flexGrow: 50, 
-                                display: { xs: "flex", md: "none" } 
-                                }}
-                        >
+                        <Box sx={{ flexGrow: 1 }}></Box>
+                        <Box sx={{ flexGrow: 50, display: { xs: "flex", md: "none" } }} >
                             <Image src={logoImg} alt="Prixite" />
                         </Box>
-                        <Box 
-                            sx={{ 
-                                flexGrow: 0, 
-                                display: { xs: "flex", md: "none" } 
-                                }}
-                        >
+                        <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }} >
                             <IconButton
                                 size='large'
                                 aria-label="account of current user"
@@ -87,8 +67,8 @@ const Header = ({ children, bgImg }) => {
                                 onClose={handleCloseNavMenu}
                                 sx={{ display: { xs: "block", md: "none" } }}
                             >
-                                {pages.map((page) => (
-                                    <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
+                                {pages.map((page, index) => (
+                                    <MenuItem key={index} onClick={() => handleCloseNavMenu(page)}>
                                         <Typography textAlign="center">{page.text}</Typography>
                                     </MenuItem>
                                 ))}
@@ -99,31 +79,34 @@ const Header = ({ children, bgImg }) => {
                             className='header-menu' 
                             sx={{ display: { xs: 'none', md: 'flex' } }}
                         >
-                            {pages.map((page) => {
+                            {pages.map((page, index) => {
+                                if(page.text == 'Contact Us'){
+                                    return (
+                                        <Link href={page?.path} sx={{ textDecoration: 'none' }} key={index}>
+                                            <Button
+                                                className='contact-us-button'
+                                                sx={{ mx: 2 }}
+                                            >
+                                                {page.text}
+                                            </Button>
+                                        </Link>
+                                    )
+                                }
                                 return (
-                                    <>
-                                        <Link href={page?.path}>
+                                        <Link href={page?.path} sx={{ textDecoration: 'none' }} key={index}>
                                             <Typography
-                                                className='typography'
+                                                className='header-menu-items'
                                                 sx={{
                                                     mx: 2,
                                                     color: router.asPath == page.path ? "var(--primary-green)" : "white",
                                                 }}
+                                                textAlign='center'
                                             >
                                                 {page.text}
                                             </Typography>
                                         </Link>
-                                    </>
                                 )
                             })}
-                            <Link href="/contact-us">
-                                <Button
-                                    className='contact-us-button'
-                                    sx={{ mx: 2 }}
-                                >
-                                    Contact Us
-                                </Button>
-                            </Link>
                         </Box>
                     </Toolbar>
                 </Container>

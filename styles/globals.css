@@ -27,3 +27,15 @@ h1,h2,h3 {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
 }
+
+.wordpress-list {
+  margin: -10px 10px -10px 40px
+}
+
+.devops-list {
+  margin: -10px 10px -10px 40px
+}
+
+.scraping-list {
+  margin: -10px 10px -10px 40px
+}
