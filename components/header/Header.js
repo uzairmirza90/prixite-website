@@ -37,8 +37,8 @@ const Header = ({ children, bgImg }) => {
                             <Image src={logoImg} alt='Prixite' onClick={() => router.push('/')} />
                         </Box>
                         <Box sx={{ flexGrow: 1 }}></Box>
-                        <Box sx={{ flexGrow: 50, display: { xs: "flex", md: "none" } }} >
-                            <Image src={logoImg} alt="Prixite" />
+                        <Box sx={{ flexGrow: 50, display: { xs: "flex", md: "none" }, cursor: 'pointer' }} >
+                            <Image src={logoImg} alt="Prixite" onClick={() => router.push('/')}/>
                         </Box>
                         <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }} >
                             <IconButton
