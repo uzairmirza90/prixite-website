@@ -7,10 +7,10 @@ import WebDevelopmentImage from '../public/images/web-development.png'
 import Image from 'next/image'
 
 const Webdevelopment = () => {
-    const {title, header, heading, description} = webDevelopment;
+  const { title, header, heading, description } = webDevelopment;
   return (
     <>
-    <Head>
+      <Head>
         <title>{title}</title>
         <meta name="prixite" content="Prixte" />
         <link rel="icon" href="/favicon.ico" />
@@ -20,7 +20,7 @@ const Webdevelopment = () => {
           <Stack
             pt={{ xs: "80px", lg: "200px" }}
             pb={{ xs: "100px", lg: "200px" }}
-            direction={{ xs: "column", md: "row"}}
+            direction={{ xs: "column", md: "row" }}
             spacing={5}
           >
             <Box>
@@ -66,7 +66,16 @@ const Webdevelopment = () => {
         </Container>
       </Header>
 
-      <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }} maxWidth='xl'>
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 4,
+          py: 10,
+          opacity: 0.8
+        }}
+        maxWidth='xl'
+      >
         {description.map((item, index) => <Typography key={index}>{item}</Typography>)}
       </Container>
     </>

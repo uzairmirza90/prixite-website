@@ -8,10 +8,10 @@ import { Container, Stack, Box, Typography, Divider } from '@mui/material'
 import Image from 'next/image'
 
 const ReactDevelopment = () => {
-  const { title, header, heading, details, description, paraList, para} = reactDevelopment
+  const { title, header, heading, details, description, paraList, para } = reactDevelopment
   return (
     <>
-    <Head>
+      <Head>
         <title>{title}</title>
         <meta name="prixite" content="Prixte" />
         <link rel="icon" href="/favicon.ico" />
@@ -21,7 +21,7 @@ const ReactDevelopment = () => {
           <Stack
             pt={{ xs: "80px", lg: "200px" }}
             pb={{ xs: "100px", lg: "200px" }}
-            direction={{ xs: "column", md: "row"}}
+            direction={{ xs: "column", md: "row" }}
             spacing={5}
           >
             <Box>
@@ -67,9 +67,20 @@ const ReactDevelopment = () => {
         </Container>
       </Header>
 
-      <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }} maxWidth='xl'>
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 4,
+          py: 10,
+          opacity: 0.8
+        }}
+        maxWidth='xl'
+      >
         {details.map((item, index) => <Typography key={index}>{item}</Typography>)}
+
         <Typography>{description}</Typography>
+
         {paraList.map((item, index) => (
           <Box key={index}>
             <ul className='wordpress-list'>
@@ -77,6 +88,7 @@ const ReactDevelopment = () => {
             </ul>
           </Box>
         ))}
+
         <Typography>{para}</Typography>
       </Container>
 

@@ -13,19 +13,11 @@ const careers = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header bgImg={careersPageBg}>
-        <Box
-          sx={{
-            padding: "230px 0px 190px 0px",
-          }}
-        >
+        <Box className='main-container'>
           <Typography
             variant="h2"
             textAlign="center"
-            sx={{
-              fontWeight: "bold",
-              textTransform: "uppercase",
-              color: "white",
-            }}
+            className='main-heading'
           >
             JOIN US
           </Typography>
@@ -39,26 +31,23 @@ const careers = () => {
           backgroundColor: '	#F8F8F8',
         }}
       >
-        <Box sx={{
-          display: 'flex',
-          gap: 3,
-        }}>
+        <Box sx={{ display: 'flex', gap: 3 }}>
           <TextField fullWidth placeholder="Keywords" />
           <TextField fullWidth placeholder="Location" />
         </Box>
-        <Button 
-          fullWidth 
-          variant="contained" 
-          sx={{ 
-            borderRadius: 7, 
-            backgroundColor: '#64aa44', 
-            mt: 1, 
-            '&:hover': { 
-              backgroundColor: '#64aa44' 
-              } 
-            }} 
-            size='large'>
-            Search Jobs
+        <Button
+          fullWidth
+          variant="contained"
+          sx={{
+            borderRadius: 7,
+            backgroundColor: '#64aa44',
+            mt: 1,
+            '&:hover': {
+              backgroundColor: '#64aa44'
+            }
+          }}
+          size='large'>
+          Search Jobs
         </Button>
 
         <FormGroup row>

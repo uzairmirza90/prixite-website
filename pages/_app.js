@@ -3,7 +3,8 @@ import '../components/header/header.scss'
 import '../styles/pagesStyles/home.scss'
 import '../components/footer/footer.scss'
 import '../styles/pagesStyles/contactUs.scss'
-import { createTheme, ThemeProvider, responsiveFontSizes} from '@mui/material/styles'
+import '../styles/pagesStyles/careers.scss'
+import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material/styles'
 import Head from 'next/head'
 import Layout from '../components/layout/Layout'
 
@@ -28,16 +29,16 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </Head>
-      <ThemeProvider theme={theme}> 
+      <ThemeProvider theme={theme}>
         <Layout>
-          <Component {...pageProps} />    
+          <Component {...pageProps} />
         </Layout>
       </ThemeProvider>
     </>

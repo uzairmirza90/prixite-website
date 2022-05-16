@@ -67,9 +67,20 @@ const WordPressDevelopment = () => {
                 </Container>
             </Header>
 
-            <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }} maxWidth='xl'>
+            <Container
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 4,
+                    py: 10,
+                    opacity: 0.8
+                }}
+                maxWidth='xl'>
+
                 <Typography>{para1}</Typography>
+
                 <Typography>{serviceHeading}</Typography>
+
                 {services.map((item, index) => (
                     <Box key={index}>
                         <ul className='wordpress-list'>

@@ -1,24 +1,29 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
 import { useRouter } from 'next/router'
+import { footerData } from '../../constants/constants'
 
 const Footer = () => {
-    const router = useRouter()
+  const router = useRouter()
+  const { address, phone, email, copyright } = footerData
+
   return (
     <Box className='footer-container'>
       <Typography className='heading-1'>
-        Office Address: 4 Mozang Road, Near Family Hospital, Lahore, Pakistan
+        {address}
       </Typography>
       <Typography className='heading-2'>
-        Phone: 042 37114925| Email:{" "}
+        Phone: {phone} | Email:{" "}
         <span
-            onClick={() => router.push("mailto:hi@prixite.com")}
-            className='heading-3'
+          onClick={() => router.push("mailto:hi@prixite.com")}
+          className='heading-3'
         >
-          hi@prixite.com
+          {email}
         </span>
       </Typography>
-      <Typography className='heading-4'>Copyright © 2022 Prixite</Typography>
+      <Typography className='heading-4'>
+        {copyright}
+      </Typography>
     </Box>
   )
 }

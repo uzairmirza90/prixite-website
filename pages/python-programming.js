@@ -8,10 +8,10 @@ import pythonBgImg from '../public/images/python.jpg'
 import pythonImg from '../public/images/wordpress Development-01.png'
 
 const PythonProgramming = () => {
-  const { title, header, heading, details, description, paraList} = pythonProgramming
+  const { title, header, heading, details, description, paraList } = pythonProgramming
   return (
     <>
-    <Head>
+      <Head>
         <title>{title}</title>
         <meta name="prixite" content="Prixte" />
         <link rel="icon" href="/favicon.ico" />
@@ -21,7 +21,7 @@ const PythonProgramming = () => {
           <Stack
             pt={{ xs: "80px", lg: "200px" }}
             pb={{ xs: "100px", lg: "200px" }}
-            direction={{ xs: "column", md: "row"}}
+            direction={{ xs: "column", md: "row" }}
             spacing={5}
           >
             <Box>
@@ -67,9 +67,20 @@ const PythonProgramming = () => {
         </Container>
       </Header>
 
-      <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }} maxWidth='xl'>
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 4,
+          py: 10,
+          opacity: 0.8
+        }}
+        maxWidth='xl'
+      >
         {details.map((item, index) => <Typography key={index}>{item}</Typography>)}
+
         <Typography>{description}</Typography>
+
         {paraList.map((item, index) => (
           <Box key={index}>
             <ul className='wordpress-list'>

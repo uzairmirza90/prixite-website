@@ -21,20 +21,20 @@ const Header = ({ children, bgImg }) => {
     };
 
     return (
-        <Box 
-            sx={{ 
+        <Box
+            sx={{
                 background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${bgImg?.src})`,
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover' 
+                backgroundSize: 'cover'
             }}
         >
-            <Box  className='header'></Box>
+            <Box className='header'></Box>
             <AppBar position='static' className='app-bar'>
                 <Container maxWidth='xl'>
                     <Toolbar disableGutters>
-                        <Box sx={{ mr: 2, display: { xs: "none", md: "flex"}, cursor: 'pointer' }} >
-                            <Image src={logoImg} alt='Prixite' onClick={() => router.push('/')}/>
+                        <Box sx={{ mr: 2, display: { xs: "none", md: "flex" }, cursor: 'pointer' }} >
+                            <Image src={logoImg} alt='Prixite' onClick={() => router.push('/')} />
                         </Box>
                         <Box sx={{ flexGrow: 1 }}></Box>
                         <Box sx={{ flexGrow: 50, display: { xs: "flex", md: "none" } }} >
@@ -75,12 +75,12 @@ const Header = ({ children, bgImg }) => {
                             </Menu>
                         </Box>
 
-                        <Box 
-                            className='header-menu' 
+                        <Box
+                            className='header-menu'
                             sx={{ display: { xs: 'none', md: 'flex' } }}
                         >
                             {pages.map((page, index) => {
-                                if(page.text == 'Contact Us'){
+                                if (page.text == 'Contact Us') {
                                     return (
                                         <Link href={page?.path} sx={{ textDecoration: 'none' }} key={index}>
                                             <Button
@@ -93,18 +93,18 @@ const Header = ({ children, bgImg }) => {
                                     )
                                 }
                                 return (
-                                        <Link href={page?.path} sx={{ textDecoration: 'none' }} key={index}>
-                                            <Typography
-                                                className='header-menu-items'
-                                                sx={{
-                                                    mx: 2,
-                                                    color: router.asPath == page.path ? "var(--primary-green)" : "white",
-                                                }}
-                                                textAlign='center'
-                                            >
-                                                {page.text}
-                                            </Typography>
-                                        </Link>
+                                    <Link href={page?.path} sx={{ textDecoration: 'none' }} key={index}>
+                                        <Typography
+                                            className='header-menu-items'
+                                            sx={{
+                                                mx: 2,
+                                                color: router.asPath == page.path ? "var(--primary-green)" : "white",
+                                            }}
+                                            textAlign='center'
+                                        >
+                                            {page.text}
+                                        </Typography>
+                                    </Link>
                                 )
                             })}
                         </Box>

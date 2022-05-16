@@ -392,3 +392,18 @@ export const reactDevelopment = {
     ],
     para: 'The technology, tools, and frameworks we use to ensure the quality service delivery of progressive web application to our clients includes Laravel, Angular, Vue, Lighthouse, and Workbox which makes us an ideal choice for our customer’s business needs.'
 }
+
+
+
+
+
+
+
+
+/**************             Footer Data         ************ */
+export const footerData = {
+    address: 'Office Address: 4 Mozang Road, Near Family Hospital, Lahore, Pakistan',
+    phone: `042 37114925`,
+    email: 'hi@prixite.com',
+    copyright: 'Copyright © 2022 Prixite'
+}

@@ -56,13 +56,23 @@ const devops = () => {
                 </Container>
             </Header>
 
-            <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }} maxWidth='xl'>
+            <Container 
+                sx={{ 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    gap: 4, 
+                    py: 10, 
+                    opacity: 0.8 }} 
+                maxWidth='xl'
+            >
                 {description.map((item, index) => {
                     return (
                         <Typography key={index}>{item}</Typography>
                     )
                 })}
+
                 <Typography>{paraHeading}</Typography>
+                
                 {paraList.map((item, index) => (
                     <Box key={index}>
                         <ul className='devops-list'>
