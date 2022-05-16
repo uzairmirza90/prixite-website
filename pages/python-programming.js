@@ -68,14 +68,14 @@ const PythonProgramming = () => {
       </Header>
 
       <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }}>
-        {details.map(item => <Typography>{item}</Typography>)}
+        {details.map((item, index) => <Typography key={index}>{item}</Typography>)}
         <Typography>{description}</Typography>
         {paraList.map((item, index) => (
-          <>
+          <Box key={index}>
             <ul className='wordpress-list'>
               <li>{item}</li>
             </ul>
-          </>
+          </Box>
         ))}
       </Container>
 

@@ -70,12 +70,12 @@ const WordPressDevelopment = () => {
             <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }}>
                 <Typography>{para1}</Typography>
                 <Typography>{serviceHeading}</Typography>
-                {services.map((item) => (
-                    <>
+                {services.map((item, index) => (
+                    <Box key={index}>
                         <ul className='wordpress-list'>
                             <li>{item}</li>
                         </ul>
-                    </>
+                    </Box>
                 ))}
                 <Typography>{para2}</Typography>
             </Container>

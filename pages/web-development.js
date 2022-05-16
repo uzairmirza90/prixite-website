@@ -67,7 +67,7 @@ const Webdevelopment = () => {
       </Header>
 
       <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }}>
-        {description.map(item => <Typography>{item}</Typography>)}
+        {description.map((item, index) => <Typography key={index}>{item}</Typography>)}
       </Container>
     </>
   )

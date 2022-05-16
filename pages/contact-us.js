@@ -33,7 +33,7 @@ const ContactUs = () => {
             <Grid container spacing={'7rem'} sx={{ py: '120px'}}>
                 <Grid item xs={12} md={6}>
                     {description.map((item, index) => (
-                        <>
+                        <Box key={index}>
                             <Typography variant='h5' fontWeight='bold' mb='1rem'>
                                 {item.title}
                             </Typography>
@@ -41,7 +41,7 @@ const ContactUs = () => {
                             <Typography  sx={{letterSpacing: '1px'}}>
                                 {item.para}
                             </Typography>
-                        </>
+                        </Box>
                     ))}
                 </Grid>
 
@@ -58,12 +58,12 @@ const ContactUs = () => {
                     </Typography>
 
                     {contactInfo.details.map((item, index) => (
-                        <>
+                        <Box key={index}>
                             <Typography fontWeight="bold" mt="2rem">
                                 {item.heading}
                             </Typography>
                             <Typography>{item.contact}</Typography>
-                        </>
+                        </Box>
                     ))}
 
                     <Stack

@@ -72,11 +72,11 @@ const scraping = () => {
        <Typography>{description}</Typography>
 
        {paraList.map((item, index) => (
-         <>
+         <Box key={index}>
           <ul className='scraping-list'>
             <li style={{lineHeight: '25px'}}>{item}</li>
           </ul>
-         </>
+         </Box>
        ))}
     </Container>
 </>
