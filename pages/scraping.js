@@ -68,7 +68,7 @@ const scraping = () => {
         </Container>
     </Header>
 
-    <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }}>
+    <Container sx={{ display: 'flex', flexDirection: 'column', gap: 4, py: 10, opacity: 0.8 }} maxWidth='xl'>
        <Typography>{description}</Typography>
 
        {paraList.map((item, index) => (

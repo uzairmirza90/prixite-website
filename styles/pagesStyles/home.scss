@@ -1,7 +1,6 @@
 .home-main-heading-1 {
-    font-weight: bold;
+    font-weight: 600;
     color: white;
-    font-family: sans-serif;
 }
 
 .divider {
@@ -11,15 +10,17 @@
 }
 
 .home-main-heading-2 {
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 3rem;
-    color: white
+    color: white;
 }
 
 .service-heading {
-    margin: 6.5rem 0 3rem 0;
+    margin: 6.9rem 0 3rem 0;
     text-align: center;
     font-weight: 700;
+    font-size: 35px;
+    opacity: 0.8;
 }
 
 .service-divider {
@@ -34,6 +35,12 @@
     margin: 10px 0;
 }
 
+.service-image {
+    box-shadow: 10px 10px 0px 1px rgb(0 0 0 / 7%); 
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .service-button {
     text-align: center;
     background-color: var(--primary-green);
@@ -43,7 +50,7 @@
     padding-bottom: 12px;
     padding-right: 40px;
     padding-left: 40px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .service-button:hover {

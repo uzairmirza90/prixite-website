@@ -55,31 +55,31 @@ export default function Home() {
           </Stack>
         </Container>
       </Header>
-      <Container>
+      <Container maxWidth='xl'>
 
-        <Box p="5rem 1.3rem">
+        <Box p="5rem 3rem">
 
-          <Typography variant="h5" fontWeight="bold">{descriptionHeading}</Typography>
+          <Typography variant="h5" fontWeight="600">{descriptionHeading}</Typography>
 
           {paragraphs.map((item, index) => (
             <Typography margin="1.8rem 0" key={index}>{item.para}</Typography>
           )
           )}
 
-          <Typography variant="h3" className='service-heading'>{servicesHeading}</Typography>
+          <Typography variant="h4" className='service-heading'>{servicesHeading}</Typography>
 
           <Divider variant="middle" className='service-divider' sx={{ mx: 'auto', fill: 'true', width: '8%' }} />
 
-          <Grid container spacing={{ xs: 2, md: 3 }}>
+          <Grid container spacing={{ xs: 2, md: 3 }} columnSpacing={10}>
 
             {services.map((item, index) => (
               <Grid item sm={12} md={6} key={index}>
                 <Box marginBottom="10px">
-                  <div>
-                    <Image src={item.img} objectFit='cover' width={500} height={300} />
+                  <div className='service-image'>
+                    <Image src={item.img} objectFit='cover' width={800} height={500} className='service-image' onClick={() => router.push(item.path)} />
                   </div>
 
-                  <Typography variant="h6" fontWeight="bold" mt='20px'>{item.title}</Typography>
+                  <Typography variant="h6" fontWeight="600" mt='20px'>{item.title}</Typography>
                   <Typography className='service-description'>{item.desc}</Typography>
 
                   <Box textAlign="center" mt="2rem">
